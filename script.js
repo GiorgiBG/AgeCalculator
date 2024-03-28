@@ -66,8 +66,11 @@ const test = function (e) {
     const age = new Date(now - yourBirthday);
     const ageYear = Math.abs(age.getFullYear() - 1970);
     const ageMonth = Math.abs(age.getMonth());
-    const ageday = Math.abs(age.getDay());
-    console.log(ageMonth, ageday, ageYear);
+    const ageDay = Math.abs(age.getDay());
+    console.log(ageMonth, ageDay, ageYear);
+    outputDay.textContent = ageDay;
+    outputMonth.textContent = ageMonth;
+    outputYear.textContent = ageYear;
   }
 };
 
